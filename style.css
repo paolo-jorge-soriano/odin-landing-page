@@ -1,7 +1,7 @@
 body {
-    font-family: 'Roboto';
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto';
     margin: 0;
 }
 
@@ -11,19 +11,27 @@ header {
 }
 
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #1f2937;
     color: white;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 .left-links, .right-links {
+    display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex;
     gap: 16px;
+}
+
+.left-links {
+    padding-left: 24px;
+}
+
+.right-links {
+    padding-right: 24px;
 }
 
 a {
@@ -36,16 +44,37 @@ main {
     flex-direction: column;
 }
 
-#hero {
+.hero {
+    display: flex;
     background-color: #1f2937;
     color: white;
+}
+
+.quote {
     display: flex;
+    flex-direction: column;
+    background-color: #e5e7eb;
+    padding: 50px 550px;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-family: 'Roboto Light';
+    font-style: italic;
+    color: #1f2937;
+}
+
+.quote-author {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1f2937;
+    text-align: right;
 }
 
 .footer-container {
-    background-color: #1f2937;
-    color: white;
     display: flex;
     justify-content: center;
+    background-color: #1f2937;
+    color: white;
     padding: 16px;
 }
