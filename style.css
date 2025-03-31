@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    font-family: 'Roboto';
+    font-family: 'Roboto', 'Calibri';
     margin: 0;
 }
 
@@ -46,8 +46,73 @@ main {
 
 .hero {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #1f2937;
     color: white;
+    padding: 100px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.hero-text button {
+    text-align: center;
+    background-color: #3882f6;
+    color: white;
+    font-family: 'Roboto', 'Calibri';
+    font-size: 14px;
+    font-weight: bold;
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.random {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.random h2 {
+    padding: 15px;
+}
+
+.random-container {
+    display: flex;
+}
+
+.random-item {
+    max-width: 200px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.random-item img {
+    width: 120px;
+    height: 120px;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+}
+
+.random-item p {
+    font-size: 12px;
 }
 
 .quote {
